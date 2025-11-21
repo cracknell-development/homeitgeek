@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <title>Home IT Geek Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home">
+                    <img src="home.it.geek-text.png" alt="Home IT Geek" class="logo">
+                </a>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" onclick="showPage('home')">HOME</a></li>
+                    <li><a href="#pricing" onclick="showPage('pricing')">PRICING</a></li>
+                    <li><a href="#area" onclick="showPage('area')">AREA</a></li>
+                    <li><a href="#contact" onclick="showPage('contact')">CONTACT US</a></li>
+                    <li><a href="#enquiry" onclick="showPage('enquiry')">GET QUOTE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="container hero-content">
+                    <div class="hero-text">
+                        <h1>Home IT Geek Support</h1>
+                        <p>IT support services for your home needs. We can solve your technology problems and needs quickly and efficiently.</p>
+                    </div>
+                    <img src="Cartoon-me.png" alt="IT Support Professional" class="hero-image">
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="services">
+                    <div class="service-card">
+                        <h3>Computer Repair</h3>
+                        <p>Hardware diagnostics, repairs, and upgrades for desktops and laptops. We fix what's broken and optimize performance.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Network Setup</h3>
+                        <p>Home network installation, WiFi optimization, and security configuration. Get connected reliably and securely.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Software Support</h3>
+                        <p>Operating system installation, software troubleshooting, and virus removal. Keep your systems running smoothly.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Home Automation</h3>
+                        <p>Setup automated schedules, connect light bulbs and plug sockets etc to your home hub.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Remote Support</h3>
+                        <p>Quick remote assistance for software issues. Get help instantly without waiting for a home/office visit.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Upgrade to Windows 11</h3>
+                        <p>Don't automatically buy a new laptop if your computer says it cannot upgrade. There may be another way.</p>
+                    </div>
+                </section>
+
+                <section class="cta">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Contact us today for a free consultation and quote.</p>
+                    <button class="btn" onclick="showPage('enquiry')">Get Free Quote</button>
+                </section>
+            </div>
+        </div>
+
+        <!-- Pricing Page -->
+        <div id="pricing" class="page">
+            <div class="container">
+                <h1>Pricing</h1>
+                <p class="page-subtitle">Transparent, competitive pricing for all your IT support needs.</p>
+
+                <div class="pricing-grid">
+                    <div class="service-card">
+                        <h3>On-Site Support</h3>
+                        <div class="price">£40/hour</div>
+                        <ul class="feature-list">
+                            <li>✓ Computer diagnostics & repair</li>
+                            <li>✓ Hardware installation</li>
+                            <li>✓ Network setup & troubleshooting</li>
+                            <li>✓ 1-hour minimum</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Remote Support</h3>
+                        <div class="price">£30/hour</div>
+                        <ul class="feature-list">
+                            <li>✓ Software troubleshooting</li>
+                            <li>✓ System optimization</li>
+                            <li>✓ Virus removal</li>
+                            <li>✓ 30-minute minimum charge</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="package-deals">
+                    <h3>Package Deals</h3>
+                    <div class="package-grid">
+                        <div>
+                            <h4>Basic Setup - £75</h4>
+                            <p>Computer setup, basic software installation, antivirus setup</p>
+                        </div>
+                        <div>
+                            <h4>Network Package - £100</h4>
+                            <p>Router setup, WiFi configuration, security setup, device connection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <h3>Additional Information</h3>
+                    <ul>
+                        <li>No hidden fees or surprise charges</li>
+                        <li>Free estimates for all services</li>
+                        <li>Emergency service available (additional £20)</li>
+                        <li>All work guaranteed for 30 days</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area Page -->
+        <div id="area" class="page">
+            <div class="container">
+                <h1>Service Area</h1>
+                <p class="page-subtitle">We provide on-site IT support services to towns within 10 miles of Wokingham, Berkshire.</p>
+
+                <div class="area-highlight">
+                    <h2>Areas Covered</h2>
+                    <p><strong>10-mile radius from Wokingham, Berkshire</strong></p>
+                </div>
+
+                <div class="area-grid">
+                    <div class="service-card">
+                        <h3>Primary Towns</h3>
+                        <ul class="area-list">
+                            <li>• Wokingham</li>
+                            <li>• Reading</li>
+                            <li>• Bracknell</li>
+                            <li>• Camberley</li>
+                            <li>• Farnborough</li>
+                            <li>• Aldershot</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Surrounding Areas</h3>
+                        <ul class="area-list">
+                            <li>• Crowthorne</li>
+                            <li>• Sandhurst</li>
+                            <li>• Yateley</li>
+                            <li>• Fleet</li>
+                            <li>• Woodley</li>
+                            <li>• Earley</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Villages & Suburbs</h3>
+                        <ul class="area-list">
+                            <li>• Finchampstead</li>
+                            <li>• Arborfield</li>
+                            <li>• Shinfield</li>
+                            <li>• Winnersh</li>
+                            <li>• Twyford</li>
+                            <li>• Wargrave</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="area-contact">
+                    <h3>Not Sure If We Cover Your Area?</h3>
+                    <p>Contact us to confirm coverage for your location. We may be able to arrange service for areas just outside our standard coverage zone.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="container">
+                <h1>Contact Us</h1>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Email Support</h3>
+                        <p><strong>General:</strong> info@homeitgeek.com</p>
+                        <p><strong>Support:</strong> support@homeitgeek.com</p>
+                        <p><strong>Emergency:</strong> emergency@homeitgeek.com</p>
+                        <p>Response within 2-4 hours during business hours</p>
+                    </div>
+                </div>
+
+                <section class="why-choose">
+                    <h2>Why Choose Home IT Geek?</h2>
+                    <div class="benefits-grid">
+                        <div>
+                            <h4>Local Experts</h4>
+                            <p>We're your neighbors, providing personalized service with local knowledge and quick response times.</p>
+                        </div>
+                        <div>
+                            <h4>Transparent Pricing</h4>
+                            <p>No hidden fees or surprise charges. We provide clear quotes upfront and stick to our estimates.</p>
+                        </div>
+                        <div>
+                            <h4>Satisfaction Guaranteed</h4>
+                            <p>We stand behind our work with a 30-day satisfaction guarantee on all services and repairs.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Enquiry Page -->
+        <div id="enquiry" class="page">
+            <div class="container">
+                <div id="enquiry-form">
+                    <h1>Get a Free Quote</h1>
+                    <p class="page-subtitle">Tell us about your IT needs and we'll provide a free, no-obligation quote within 24 hours.</p>
+
+                    <form id="contactForm" class="enquiry-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Service Needed *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service...</option>
+                                <option value="computer-repair">Computer Repair</option>
+                                <option value="network-setup">Network Setup</option>
+                                <option value="software-support">Software Support</option>
+                                <option value="data-recovery">Data Recovery</option>
+                                <option value="remote-support">Remote Support</option>
+                                <option value="home-automation">Home Automation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency">
+                                <option value="low">Low - Within a week</option>
+                                <option value="normal" selected>Normal - Within 2-3 days</option>
+                                <option value="high">High - Within 24 hours</option>
+                                <option value="emergency">Emergency - ASAP</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Describe Your Issue *</label>
+                            <textarea id="description" name="description" placeholder="Please provide details about your IT issue or requirements..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredContact">Preferred Contact Method</label>
+                            <select id="preferredContact" name="preferredContact">
+                                <option value="email" selected>Email</option>
+                                <option value="phone">Phone Call</option>
+                                <option value="text">Text Message</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="captcha">Security Check: <span id="captchaQuestion"></span></label>
+                            <input type="number" id="captcha" name="captcha" placeholder="Enter the answer" required>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn">Submit Enquiry</button>
+                        </div>
+                    </form>
+
+                    <div class="what-happens-next">
+                        <h3>What Happens Next?</h3>
+                        <ol>
+                            <li>We'll review your enquiry within 2-4 hours</li>
+                            <li>Our technician will contact you to discuss your needs</li>
+                            <li>We'll provide a detailed quote with transparent pricing</li>
+                            <li>Schedule service at your convenience</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="thank-you" class="thank-you" style="display: none;">
+                    <h1>Thank You!</h1>
+                    <p>We've received your enquiry and will get back to you within 2-4 hours during business hours.</p>
+                    <p>Reference ID: <span id="referenceId"></span></p>
+                    <button class="btn" onclick="resetForm()">Submit Another Enquiry</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Home IT Geek. All rights reserved. IT Support Services.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

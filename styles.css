@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #7d8471;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #7d8471;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0.2rem 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: block;
+    transition: all 0.2s;
+}
+
+.nav-menu a:hover {
+    background-color: white;
+    color: #7d8471;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    margin-top: 80px;
+    padding: 2rem 0;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #9caf88 0%, #7d8471 100%);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    max-width: 188px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    color: #5a6b4f;
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin: 1rem 0;
+}
+
+/* Button */
+.btn {
+    background: #7d8471;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #6b7460;
+}
+
+/* Page Titles */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Pricing Page */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.price {
+    font-size: 2rem;
+    color: #7d8471;
+    margin: 1rem 0;
+}
+
+.feature-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.package-deals {
+    background: #f0f2ed;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.additional-info {
+    text-align: center;
+}
+
+.additional-info ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Area Page */
+.area-highlight {
+    background: #f0f2ed;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.area-highlight h2 {
+    margin-bottom: 1rem;
+}
+
+.area-highlight p {
+    font-size: 1.2rem;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.area-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.area-contact {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.area-contact h3 {
+    margin-bottom: 1rem;
+}
+
+.area-contact p {
+    margin: 1rem 0;
+}
+
+/* Contact Page */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-card {
+    background: #f0f2ed;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #5a6b4f;
+    margin-bottom: 1rem;
+}
+
+.why-choose {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Enquiry Form */
+.enquiry-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.what-happens-next {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.what-happens-next h3 {
+    margin-bottom: 1rem;
+}
+
+.what-happens-next ol {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* Thank You Page */
+.thank-you {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.thank-you h1 {
+    margin-bottom: 2rem;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: #7d8471;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .services {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-grid,
+    .area-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+}
